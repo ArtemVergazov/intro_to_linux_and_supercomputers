@@ -1,0 +1,11 @@
+==========================================
+SLURM_JOB_ID = 40813
+SLURM_JOB_NODELIST = cn01
+SLURM_GPUS = 
+SLURM_CPUS_ON_NODE = 1
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 372592
+==========================================
+Submitted batch job 40814
+Submitted batch job 40815
+Submitted batch job 40816

@@ -4,7 +4,7 @@
  * prog -s in out
  * Created by Artem.Vergazov@skoltech.ru 11.16.21 @9:13PM.
  */
-
+ 
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -35,11 +35,11 @@ long getparams(int argc, char *argv[]) {
     long parsize = 0;
 
     while ((opt = getopt(argc, argv, flags)) != -1) {
-        if ( opt == optflags[0] ) { // note: switch needs const in case
+    	if ( opt == optflags[0] ) { // note: switch needs const in case
             param = optarg;
-            parsize = atoll(param);
-            // break; shoud NOT break the while loop to collect all flags/parameters
-        } else usage(argc, argv);
+	    parsize = atoll(param);
+	    // break; shoud NOT break the while loop to collect all flags/parameters
+	} else usage(argc, argv);
     }
 
     return parsize;
@@ -55,20 +55,21 @@ int main(int argc, char *argv[]) {
     ssize_t nread, nwrit;
     char buf[SIZEBUF];
     long parsize = getparams(argc, argv);
+	
     fprintf(stderr, "Option arguments: %ld\n", parsize);
 
-    int k = optind - 1;
+    int k = optind;
     if (k < argc) {
-        fprintf(stderr, "Open stdin: %d %s\n", k, argv[k]);
-        f1 = open(argv[k], readflg); //open for reading, position stream at the beginning
-        if (f1 < 0) perror("Open input file");
+	fprintf(stderr, "Open stdin: %d %s\n", k, argv[k]);
+	f1 = open(argv[k], readflg); //open for reading, position stream at the beginning
+	if (f1 < 0) perror("Open input file");
     }
     ++k;
 
     if(k < argc) {
-        fprintf(stderr, "Open stdout: %d %s\n", k, argv[k]);
-        f2 = open(argv[k], writflg); // open for write and truncate
-        if (f2 < 0) perror("Open output file");
+	fprintf(stderr, "Open stdout: %d %s\n", k, argv[k]);
+	f2 = open(argv[k], writflg); // open for write and truncate
+	if (f2 < 0) perror("Open output file");
     }
 
     if ((fpos = lseek(f2, (off_t)0, SEEK_END)) < 0) perror("lseek");
@@ -80,16 +81,34 @@ int main(int argc, char *argv[]) {
     while (nread = read(f1, buf, SIZEBUF)) { // get a string from stdin, NULL is returned when EOF or error
         nwrit = 0;
         do {
-            nread -= nwrit;
-            nwrit = write(f2, buf + nwrit, nread); // if write is interrupted, it may return less bytes
-        } while (nwrit < nread);                   // in that case the call is restarted until all bytes are written
+	    nread -= nwrit;
+	    nwrit = write(f2, buf + nwrit, nread); // if write is interrupted, it may return less bytes
+	} while (nwrit < nread);                   // in that case the call is restarted until all bytes are written
     }
-
+    
     struct stat finfo;
     if (fstat(f2, &finfo) < 0) perror("fstat"); // fileno extracts file descriptor from FILE
     else {
-        fprintf(stderr, "File size: %ld\n", finfo.st_size);
-        fprintf(stderr, "Blocks allocated: %ld size on disk: %ld Bytes\n", finfo.st_blocks, finfo.st_blocks * 512);
+	fprintf(stderr, "File size: %ld\n", finfo.st_size);
+	fprintf(stderr, "Blocks allocated: %ld size on disk: %ld Bytes\n", finfo.st_blocks, finfo.st_blocks * 512);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

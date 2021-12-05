@@ -1,0 +1,11 @@
+==========================================
+SLURM_JOB_ID = 41154
+SLURM_JOB_NODELIST = cn01
+SLURM_GPUS = 
+SLURM_CPUS_ON_NODE = 1
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 406486
+==========================================
+Trials: 8000000000 Ncirc: 6283221485 Threads: 1 Elapsed: 92.26 PI: 3.14161074 dpi: 5e-05
+Trials: 8000000000 Ncirc: 6283193708 Threads: 2 Elapsed: 46.22 PI: 3.14159685 dpi: 5e-05
+Trials: 8000000000 Ncirc: 6283212590 Threads: 4 Elapsed: 23.52 PI: 3.14160629 dpi: 5e-05
