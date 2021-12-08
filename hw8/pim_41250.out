@@ -1,0 +1,54 @@
+==========================================
+SLURM_JOB_ID = 41250
+SLURM_JOB_NODELIST = cn01
+SLURM_GPUS = 
+SLURM_CPUS_ON_NODE = 1
+SLURM_JOB_PARTITION = cpu
+SLURM_TASK_PID = 423465
+==========================================
+200000
+Trials: 200000 Ncirc: 156931 Threads: 1 Elapsed: 0.00 PI: 3.13862000 dpi: 0.01
+0
+400000
+Trials: 400000 Ncirc: 314162 Threads: 1 Elapsed: 0.01 PI: 3.14162000 dpi: 0.007
+0
+800000
+Trials: 800000 Ncirc: 628591 Threads: 1 Elapsed: 0.01 PI: 3.14295500 dpi: 0.005
+0
+1600000
+Trials: 1600000 Ncirc: 1257323 Threads: 1 Elapsed: 0.04 PI: 3.14330750 dpi: 0.004
+0
+3200000
+Trials: 3200000 Ncirc: 2514480 Threads: 1 Elapsed: 0.08 PI: 3.14310000 dpi: 0.002
+0
+6400000
+Trials: 6400000 Ncirc: 5028963 Threads: 1 Elapsed: 0.18 PI: 3.14310188 dpi: 0.002
+0
+12800000
+Trials: 12800000 Ncirc: 10055882 Threads: 1 Elapsed: 0.38 PI: 3.14246312 dpi: 0.001
+0
+25600000
+Trials: 25600000 Ncirc: 20110034 Threads: 1 Elapsed: 0.77 PI: 3.14219281 dpi: 0.0009
+0
+51200000
+Trials: 51200000 Ncirc: 40218103 Threads: 1 Elapsed: 1.55 PI: 3.14203930 dpi: 0.0006
+1
+102400000
+Trials: 102400000 Ncirc: 80427851 Threads: 1 Elapsed: 3.15 PI: 3.14171293 dpi: 0.0004
+3
+204800000
+Trials: 204800000 Ncirc: 160852426 Threads: 1 Elapsed: 6.28 PI: 3.14164895 dpi: 0.0003
+6
+409600000
+Trials: 409600000 Ncirc: 321709085 Threads: 1 Elapsed: 12.58 PI: 3.14169028 dpi: 0.0002
+12
+819200000
+Trials: 819200000 Ncirc: 643407487 Threads: 1 Elapsed: 17.61 PI: 3.14163812 dpi: 0.0002
+17
+1638400000
+Trials: 1638400000 Ncirc: 1286809573 Threads: 1 Elapsed: 25.26 PI: 3.14162493 dpi: 0.0001
+25
+3276800000
+Trials: 3276800000 Ncirc: 2573597410 Threads: 1 Elapsed: 50.41 PI: 3.14159840 dpi: 8e-05
+50
+6553600000
