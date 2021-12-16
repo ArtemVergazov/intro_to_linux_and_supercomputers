@@ -1,0 +1,25 @@
+submit cpu output=PImpi_2_1.out -N 2 -n 2 -c 1 --mincpus=2 --mem=1G --time=2:00
+Submitted batch job 1320959
+submit cpu output=PImpi_2_2.out -N 2 -n 2 -c 2 --mincpus=3 --mem=1G --time=2:00
+Submitted batch job 1320963
+submit cpu output=PImpi_2_4.out -N 2 -n 2 -c 4 --mincpus=5 --mem=1G --time=2:00
+Submitted batch job 1320964
+submit cpu output=PImpi_2_8.out -N 2 -n 2 -c 8 --mincpus=9 --mem=1G --time=2:00
+Submitted batch job 1320965
+submit cpu output=PImpi_4_1.out -N 4 -n 4 -c 1 --mincpus=2 --mem=1G --time=2:00
+Submitted batch job 1320966
+submit cpu output=PImpi_4_2.out -N 4 -n 4 -c 2 --mincpus=3 --mem=1G --time=2:00
+Submitted batch job 1320968
+submit cpu output=PImpi_4_4.out -N 4 -n 4 -c 4 --mincpus=5 --mem=1G --time=2:00
+Submitted batch job 1320969
+submit cpu output=PImpi_4_8.out -N 4 -n 4 -c 8 --mincpus=9 --mem=1G --time=2:00
+Submitted batch job 1320970
+submit cpu output=PImpi_8_1.out -N 8 -n 8 -c 1 --mincpus=2 --mem=1G --time=2:00
+Submitted batch job 1320971
+submit cpu output=PImpi_8_2.out -N 8 -n 8 -c 2 --mincpus=3 --mem=1G --time=2:00
+Submitted batch job 1320973
+submit cpu output=PImpi_8_4.out -N 8 -n 8 -c 4 --mincpus=5 --mem=1G --time=2:00
+Submitted batch job 1320974
+submit cpu output=PImpi_8_8.out -N 8 -n 8 -c 8 --mincpus=9 --mem=1G --time=2:00
+Submitted batch job 1320975
+END

@@ -1,0 +1,2 @@
+MASTER cn22.zhores Trials: 16000000000  Ncirc: 12566385400  Seed: 8112         Threads(MPI,OMP): 2 1 Elapsed: 87.97  PI: 3.14159635 dpi: 4e-05
+MASTER cn22.zhores Trials: 16000000000  Ncirc: 12566394858  Seed: 7985         Threads(MPI,OMP): 2 2 Elapsed: 88.21  PI: 3.14159871 dpi: 4e-05

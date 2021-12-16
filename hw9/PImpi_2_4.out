@@ -1,0 +1,12 @@
+nodelist: cn[23,34] Nodes: 2 Tasks: 2 CPUs: 2 MPI: 2 OMP: 4
+--------------------------------------------------------------------------
+An ORTE daemon has unexpectedly failed after launch and before
+communicating back to mpirun. This could be caused by a number
+of factors, including an inability to create a connection back
+to mpirun due to a lack of common network interfaces and/or no
+route found between them. Please check network connectivity
+(including firewalls and network routing requirements).
+--------------------------------------------------------------------------
+real 0.18
+user 0.00
+sys 0.06

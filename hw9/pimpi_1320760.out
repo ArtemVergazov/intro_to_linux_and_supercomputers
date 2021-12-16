@@ -1,0 +1,18 @@
+N-list: cn[23,30,36,40] #nodes: 4
+#tasks: 4 cpu: 4
+id 0 n_omp: 4 cn23.zhores parameters: 800000000 26087
+id 2 n_omp: 4 cn36.zhores parameters: 800000000 78261
+id 1 n_omp: 4 cn30.zhores parameters: 800000000 52174
+id 3 n_omp: 4 cn40.zhores parameters: 800000000 104348
+	mpi_thread: 1 of 4  points: 800000000  seed: 52174 ncirc: 628307459 T: 2.20 [ 2.20 2.20 2.20 2.20 ]
+	mpi_thread: 2 of 4  points: 800000000  seed: 78261 ncirc: 628320648 T: 2.20 [ 2.20 2.20 2.20 2.20 ]
+	mpi_thread: 0 of 4  points: 800000000  seed: 26087 ncirc: 628310601 T: 2.20 [ 2.20 2.20 2.20 2.20 ]
+	mpi_thread: 3 of 4  points: 800000000  seed: 104348 ncirc: 628320786 T: 2.21 [ 2.21 2.21 2.21 2.21 ]
+cn30.zhores Trials: 3200000000   Ncirc: 2513259494   Seed: 52174        Threads(MPI,OMP): 4 4 Elapsed: 2.21  PI: 3.14157437 dpi: 8e-05
+cn36.zhores Trials: 3200000000   Ncirc: 2513259494   Seed: 78261        Threads(MPI,OMP): 4 4 Elapsed: 2.21  PI: 3.14157437 dpi: 8e-05
+cn40.zhores Trials: 3200000000   Ncirc: 2513259494   Seed: 104348       Threads(MPI,OMP): 4 4 Elapsed: 2.21  PI: 3.14157437 dpi: 8e-05
+cn23.zhores Trials: 3200000000   Ncirc: 2513259494   Seed: 26087        Threads(MPI,OMP): 4 4 Elapsed: 2.21  PI: 3.14157437 dpi: 8e-05
+MASTER cn23.zhores Trials: 3200000000   Ncirc: 2513259494   Seed: 26087        Threads(MPI,OMP): 4 4 Elapsed: 2.21  PI: 3.14157437 dpi: 8e-05
+real 2.78
+user 8.88
+sys 0.08

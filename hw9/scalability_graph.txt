@@ -1,0 +1,5 @@
+MPI/OMP	1	2	4	8
+2	87.97	88.21	failed	no output
+4	failed	failed	failed	failed
+8	failed	failed	failed	failed
+
