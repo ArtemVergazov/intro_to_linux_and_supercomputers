@@ -1,0 +1,10 @@
+Created by Artem.Vergazov@skoltech.ru on 12.24.21 @4:26AM.
+
+number of iterations: 1.0e+08
+number of trials    : 5
+RACE            Real time[s] for threads
+resolution       1         2         4
+mutex            1.540000  14.440000 37.400000
+semaphore        1.800000  16.210000 87.850000
+atomic           0.680000  2.710000  7.330000
+

@@ -1,0 +1,5 @@
+Perf [GFlop/s]
+program (N = 30000)	Precision	OMP/MKL Threads
+								1		2		4		8		16
+matmul_MKL			DOUBLE		72		165		329		520		1029
+					SINGLE		128		255		647		1262	1863

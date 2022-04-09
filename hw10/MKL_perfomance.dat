@@ -1,0 +1,6 @@
+Perf [GFlop/s]
+program (N = 9500)	Precision	OMP/MKL Threads
+								1		2		4		8		16		32
+matmul_MKL			SINGLE		160		252		631		1258	1840	2711
+GPU V100			SINGLE												4230
+GPU GTX-1080 Ti		SINGLE												1707

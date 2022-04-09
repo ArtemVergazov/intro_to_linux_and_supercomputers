@@ -7,10 +7,10 @@
 #
 
 var="Hello, World!" # no spaces around the = sigh
-prog=$0 # name of the script
+prog=$0	# name of the script
 echo prog: $prog
 
-arg1=$1 # argument in lst position
+arg1=$1	# argument in lst position
 echo "arg1: $arg1"
 
 argd=${1:-10} # positional defults to 10 if not there
@@ -26,5 +26,5 @@ echo $newvar3
 
 echo
 echo
-newvar4=`date ` # run cmd in same shell and return result
+newvar4=`date `	# run cmd in same shell and return result
 echo $newvar4
